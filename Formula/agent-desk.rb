@@ -4,7 +4,7 @@
 class AgentDesk < Formula
   desc "Local GUI for the coding agents agent-manager runs"
   homepage "https://agent-desk.app"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   depends_on "agent-manager"
@@ -12,23 +12,23 @@ class AgentDesk < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.1/agent-desk_0.1.1_darwin_arm64.tar.gz"
-      sha256 "f42530da68fe38fb9ef904e59b9bfe917dd343bb5a3a4dcd7f4e6ea5e8d9dfd6"
+      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.2/agent-desk_0.1.2_darwin_arm64.tar.gz"
+      sha256 "1164513ead2c4ec94c46a33b82262cb6a18cdb15140e5962d23525b81db37d1f"
     end
     on_intel do
-      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.1/agent-desk_0.1.1_darwin_amd64.tar.gz"
-      sha256 "9af52f1659396bdf7d464792b3ee0859e36dd6b697061eb5cd9ef6996272a24b"
+      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.2/agent-desk_0.1.2_darwin_amd64.tar.gz"
+      sha256 "59a20ed3e0b9b8b4f8122244be0c193db1d95a721bad1906e5b3987c95b9f822"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.1/agent-desk_0.1.1_linux_arm64.tar.gz"
-      sha256 "2d874db56d97cc38011439d8f2c3899db3c52d8b93252984cc5c144bb1839bb7"
+      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.2/agent-desk_0.1.2_linux_arm64.tar.gz"
+      sha256 "1a1712e3bbcf7847f6aa870ed6d4e0266b839cb67302c05b8577e60082b4a929"
     end
     on_intel do
-      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.1/agent-desk_0.1.1_linux_amd64.tar.gz"
-      sha256 "a21c8ba50874c3d6b90ab2b6af8f552cffee597364713e9f141c4d55114d128d"
+      url "https://github.com/gsperry/agent-desk/releases/download/v0.1.2/agent-desk_0.1.2_linux_amd64.tar.gz"
+      sha256 "01138fbb204c739ecbeffec1ad1e71a2f8bcfbb49d3ebeb984e688e6b63321ce"
     end
   end
 
