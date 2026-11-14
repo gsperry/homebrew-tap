@@ -2,8 +2,8 @@
 # scripts/homebrew.sh from a release's SHA256SUMS. The app must be signed
 # and notarized before this goes into the tap.
 cask "agent-desk-app" do
-  version "0.1.2"
-  sha256 "7361c5d9ac8e9ded3eb97cba8478a57f75c4fae5f7245931f6de714b509df05e"
+  version "0.1.3"
+  sha256 "59140060bd0cdb239fcb6df27acd48cd87e0140c59b38d39b804f7078a48103b"
 
   url "https://github.com/gsperry/agent-desk/releases/download/v#{version}/Agent-Desk_#{version}_macos.zip"
   name "Agent Desk"
