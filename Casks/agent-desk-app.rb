@@ -2,8 +2,8 @@
 # scripts/homebrew.sh from a release's SHA256SUMS. The app must be signed
 # and notarized before this goes into the tap.
 cask "agent-desk-app" do
-  version "0.1.12"
-  sha256 "2d63f3768e42d4c537e6a73d5b40635327d8b43de21b99a867ec6e6fac8c2e1b"
+  version "0.1.13"
+  sha256 "00f27b3465141bfcad343fd4c66dfc2d141844c03a244f4018622806a5cc66a2"
 
   url "https://github.com/gsperry/agent-desk/releases/download/v#{version}/Agent-Desk_#{version}_macos.zip"
   name "Agent Desk"
@@ -15,6 +15,11 @@ cask "agent-desk-app" do
   depends_on macos: :ventura
 
   app "Agent Desk.app"
+
+  # Quit before an upgrade or uninstall; Homebrew reopens it after an
+  # upgrade. The start-at-login item stays (upgrades run uninstall too, and
+  # it names the same app); zap removes it.
+  uninstall quit: "app.agent-desk.desktop"
 
   zap trash: [
     "~/Library/Application Support/agent-desk",
